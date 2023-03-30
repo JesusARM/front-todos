@@ -1,7 +1,8 @@
 import React from "react";
+import MyIcons from "./MyIcons";
 
 function CreateTodoButton() {
-  return <button>+</button>;
+  return <button>{MyIcons.plus}</button>;
 }
 
 export { CreateTodoButton };

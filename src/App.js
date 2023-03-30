@@ -7,9 +7,9 @@ import { CreateTodoButton } from "./CreateTodoButton.js";
 //TODO: +FontAwesomeIcons
 
 const todos = [
-  { text: "Cortar cebolla", completed: false },
-  { text: "Tormar el curso de intro a react", completed: false },
-  { text: "Llorar con la llorona", completed: false },
+  { text: "Aprender React", completed: false },
+  { text: "Tomar el curso de intro a react", completed: false },
+  { text: "Aprender de encriptacion con NodeJs", completed: false },
 ];
 function App() {
   return (
