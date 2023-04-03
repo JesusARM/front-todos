@@ -9,16 +9,15 @@ import { MyIcons } from "./MyIcons";
 import test from "./test.png";
 
 const todos = [
-  { text: "Aprender React", completed: false },
+  { text: "Aprender React", completed: true },
   { text: "Tomar el curso de intro a react", completed: false },
   { text: "Aprender de encriptacion con NodeJs", completed: false },
   { text: "Aprender Angular", completed: false },
 ];
 
-//TODO: Crear en input para los todos, dividirlos en dos columnas
 function App() {
   return (
-    <div className="h-screen w-screen bg-cover bg-gray-700 text-white font-sans flex">
+    <div className="myBody">
       <div className="card flex-1">
         <h1>Create new task...</h1>
         <br></br>
@@ -46,6 +45,7 @@ function App() {
               key={todo.text}
               text={todo.text}
               completed={todo.completed}
+              deleteicon={MyIcons.trash}
             />
           ))}
         </TodoList>

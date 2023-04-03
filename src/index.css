@@ -16,8 +16,13 @@ code {
     monospace;
 }
 
+.myBody{
+  /* @apply bg-gradient-to-r from-indigo-500 to-pink-500 h-screen w-screen text-white font-sans flex; */
+  @apply bg-stone-800 h-screen w-screen text-white font-sans flex;
+}
+
 h1{
-  @apply text-3xl font-bold text-gray-800;
+  @apply text-3xl font-bold bg-gradient-to-r from-purple-500  to-pink-500 text-transparent bg-clip-text; 
 }
 
 h5{
@@ -33,9 +38,13 @@ h5{
 }
 
 .card-container{
-  @apply bg-white text-black p-4 m-2 rounded-xl shadow-lg text-center;
+  @apply bg-slate-50 text-black p-4 m-2 rounded-xl shadow-lg text-center;
 }
 
 .card-list{
-  @apply bg-white text-black p-4 m-2 rounded-xl shadow-lg;
+  @apply bg-slate-50 text-black p-4 m-2 rounded-xl shadow-lg;
+}
+
+.del{
+  @apply bg-red-500 hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 rounded-md py-1 px-2 text-white;
 }

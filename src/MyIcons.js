@@ -16,6 +16,7 @@ let MyIcons = {
   circle: <FontAwesomeIcon className="mr-1" icon={solid("circle")} />,
   paperclip: <FontAwesomeIcon className="mr-1" icon={solid("paperclip")} />,
   pen: <FontAwesomeIcon className="mr-1" icon={solid("pen")} />,
+  trash: <FontAwesomeIcon className="" icon={solid("trash")} />,
 };
 
 export { MyIcons };
