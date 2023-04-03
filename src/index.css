@@ -15,3 +15,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  @apply text-3xl font-bold text-gray-800;
+}
+
+h5{
+  @apply text-xl font-bold text-slate-500;
+}
+
+.btn-create-task{
+  @apply bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-md py-1 px-2 text-white font-semibold m-1;
+}
+
+.card{
+  @apply bg-white text-black p-4 m-8 rounded-xl shadow-lg w-64;
+}
+
+.card-container{
+  @apply bg-white text-black p-4 m-2 rounded-xl shadow-lg text-center;
+}
+
+.card-list{
+  @apply bg-white text-black p-4 m-2 rounded-xl shadow-lg;
+}
