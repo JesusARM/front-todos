@@ -57,7 +57,7 @@ h5{
 }
 
 .btnCompleteTask:hover div:last-child{
-  @apply transition ease-in text-transparent ease-out translate-y-6 ;
+  @apply transition ease-in text-transparent translate-y-6 ;
 }
 
 div .check{
