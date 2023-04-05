@@ -14,7 +14,7 @@ let MyIcons = {
   plus: <FontAwesomeIcon className="mr-1" icon={solid("plus")} />,
   search: <FontAwesomeIcon className="mr-1" icon={solid("search")} />,
   circle: <FontAwesomeIcon className="mr-1" icon={solid("circle")} />,
-  paperclip: <FontAwesomeIcon className="mr-1" icon={solid("paperclip")} />,
+  paperclip: <FontAwesomeIcon className="" icon={solid("paperclip")} />,
   pen: <FontAwesomeIcon className="mr-1" icon={solid("pen")} />,
   trash: <FontAwesomeIcon className="" icon={solid("trash")} />,
 };

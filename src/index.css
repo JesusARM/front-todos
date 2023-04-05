@@ -48,3 +48,63 @@ h5{
 .del{
   @apply bg-red-500 hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 rounded-md py-1 px-2 text-white;
 }
+
+.btnCompleteTask{
+  @apply bg-gray-200 active:bg-green-700 focus:outline-none focus:ring focus:ring-green-300 rounded-md py-1 px-2 mr-1 ;
+}
+.btnCompleteTask:hover{
+  @apply transition ease-out bg-green-500;
+}
+
+.btnCompleteTask:hover div:last-child{
+  @apply transition ease-in text-transparent ease-out translate-y-6 ;
+}
+
+div .check{
+  @apply absolute -translate-y-6 text-transparent;
+}
+.btnCompleteTask:hover div:first-child{
+  @apply transition ease-out translate-y-px text-black;
+}
+
+.Todo-complete{
+  @apply line-through text-gray-400 decoration-2;
+}
+
+.btnDoubleIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.btnDoubleIcon button {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.btnDoubleIcon button span {
+  transition: transform 0.2s ease-out;
+}
+
+.btnDoubleIcon button span:first-child {
+  display: inline-block;
+}
+
+.btnDoubleIcon button span:last-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+
+.btnDoubleIcon button:hover span:first-child {
+  transform: translateY(100%);
+}
+
+.btnDoubleIcon button:hover span:last-child,
+.btnDoubleIcon[data-animation] button:hover span:last-child {
+  transform: none;
+}

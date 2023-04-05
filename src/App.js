@@ -24,11 +24,6 @@ function App() {
         <h5 className="text-slate-500">Task name</h5>
         <TodoInput Icon={MyIcons.pen}></TodoInput>
         <CreateTodoButton Icon={MyIcons.plus} />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <img src={test} alt="No disponible"></img>
       </div>
 
@@ -41,6 +36,7 @@ function App() {
         <TodoList>
           {todos.map((todo) => (
             <TodoItem
+              IconCheck={MyIcons.check}
               Icon={MyIcons.paperclip}
               key={todo.text}
               text={todo.text}
