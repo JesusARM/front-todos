@@ -37,11 +37,11 @@ function App() {
           {todos.map((todo) => (
             <TodoItem
               IconCheck={MyIcons.check}
-              Icon={MyIcons.paperclip}
+              IconClip={MyIcons.paperclip}
               key={todo.text}
               text={todo.text}
               completed={todo.completed}
-              deleteicon={MyIcons.trash}
+              IconDelete={MyIcons.trash}
             />
           ))}
         </TodoList>
