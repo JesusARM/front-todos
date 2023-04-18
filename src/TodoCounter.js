@@ -1,7 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function TodoCounter() {
-  return <h5> Has complentado 2 de 3 tareas</h5>;
+TodoCounter.prototype = {
+  totalTodos: PropTypes.number.isRequired,
+  totalCompletedTodos: PropTypes.number.isRequired,
+};
+function TodoCounter(props) {
+  return (
+    <h5>
+      {" "}
+      Has complentado {props.totalCompletedTodos} de {props.totalTodos} tareas
+    </h5>
+  );
 }
 
-export {TodoCounter};
+export { TodoCounter };

@@ -4,15 +4,18 @@ import PropTypes from "prop-types";
 
 CreateTodoButton.prototype = {
   Icon: PropTypes.element.isRequired,
+  addTodo: PropTypes.func.isRequired,
 };
 function CreateTodoButton(props) {
-  const AddTask = () => {
+  // const AddTask = () => {
 
-    alert("Añadir tarea");
-  };
+  //   alert("Añadir tarea");
+  // };
+
+
 
   return (
-    <button className="btn-create-task animate-bounce" onClick={AddTask}>
+    <button className="btn-create-task animate-bounce" onClick={props.addTodo}>
       {props.Icon} Añadir tarea
     </button>
   );

@@ -3,8 +3,14 @@ import PropTypes from 'prop-types'
 
 TodoInput.prototype = {
   Icon: PropTypes.element.isRequired,
+  setNewTodo: PropTypes.func.isRequired,
 }
 function TodoInput(props) {
+  const onNewTodo = (event) => {
+    props.setNewTodo(event.target.value)
+    console.log(event.target.value)
+  }
+
   // return <input placeholder="Buscar tarea..."></input>;
   return (
     <label className="relative block text-black m-1">
@@ -18,6 +24,7 @@ function TodoInput(props) {
         placeholder="Ir por la leche..."
         type="text"
         name="search"
+        onChange={onNewTodo}
       />
     </label>
   );
